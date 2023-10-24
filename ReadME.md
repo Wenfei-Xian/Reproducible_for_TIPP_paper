@@ -37,6 +37,23 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR866/ERR8666067/CLR_vs_HiFi_S2_L001_R2_0
 grep "^S" Ey15-2.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > Ey15-2.bp.p_ctg.gfa.fa
 minimap2 -ax map-hifi -t 64 Ey15-2.bp.p_ctg.gfa.fa Ey15-2.ccs.50X.fastq.gz | samtools sort -@12 -o Ey15-2.bp.p_ctg.gfa.fa.Ey15-2.ccs.50X.fastq.gz.sorted.bam -
 minimap2 -x map-hifi -t 64 Ey15-2.bp.p_ctg.gfa.fa Ey15-2.ccs.50X.fastq.gz -o Ey15-2.bp.p_ctg.gfa.fa.Ey15-2.ccs.50X.fastq.gz.paf
+
+#Inspector
+ref=Ey15-2.bp.p_ctg.gfa.fa
+reads=Ey15-2.ccs.50X.fastq.gz
+source /tmp/global2/wxian/software/anaconda3/bin/activate
+conda activate inspector
+inspector.py -t 64 -c $ref -r $reads -o inspector_$ref\_1 --datatype hifi
+inspector-correct.py -t 64 -i inspector_$ref\_1 --datatype pacbio-hifi -o inspector_$ref\_1
+
+#Nextpolish1
+python /ebio/abt6_projects7/small_projects/wxian/software/NextPolish/lib/nextpolish2.py -g Ey15-2.bp.p_ctg.gfa.fa -l bam.txt -r hifi -p 48 -sp -o Ey15-2.bp.p_ctg.gfa.nextpolish1.minimap2.fa
+cat bam.txt
+
+#Pilon
+
+#Racon
+
 ```
 Maize Mo17
 ```
