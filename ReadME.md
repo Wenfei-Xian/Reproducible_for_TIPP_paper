@@ -8,6 +8,7 @@ wget https://download.cncb.ac.cn/gsa/CRA004538/CRR302670/CRR302670_r2.fastq.gz
 grep "^S" Col-0_XJTX.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > Col-0_XJTX.bp.p_ctg.gfa.fa
 minimap2 -ax map-hifi -t 64 Col-0_XJTX.bp.p_ctg.gfa.fa Col-0_XJTX.ccs.50X.fastq.gz | samtools sort -@12 -o Col-0_XJTX.bp.p_ctg.gfa.fa.Col-0_XJTX.ccs.50X.fastq.gz.sorted.bam -
 minimap2 -x map-hifi -t 64 Col-0_XJTX.bp.p_ctg.gfa.fa Col-0_XJTX.ccs.50X.fastq.gz -o Col-0_XJTX.bp.p_ctg.gfa.fa.Col-0_XJTX.ccs.50X.fastq.gz.paf
+
 #Inspector
 ref=Col-0_XJTX.bp.p_ctg.gfa.fa
 reads=Col-0_XJTX.ccs.50X.fastq.gz
@@ -15,11 +16,14 @@ source /tmp/global2/wxian/software/anaconda3/bin/activate
 conda activate inspector
 inspector.py -t 64 -c $ref -r $reads -o inspector_$ref\_1 --datatype hifi
 inspector-correct.py -t 64 -i inspector_$ref\_1 --datatype pacbio-hifi -o inspector_$ref\_1
+
 #Nextpolish1
 python /ebio/abt6_projects7/small_projects/wxian/software/NextPolish/lib/nextpolish2.py -g Col-0_XJTX.bp.p_ctg.gfa.fa -l bam.txt -r hifi -p 48 -sp -o Col-0_XJTX.bp.p_ctg.gfa.nextpolish1.minimap2.fa
 bam.txt:/tmp/global2/wxian/28.Auto_Assembly/Col-0_XJTU/Col-0_XJTX.bp.p_ctg.gfa.fa.Col-0_XJTX.ccs.50X.fastq.gz.sorted.bam
+
 #Pilon
 java -jar /tmp/global2/wxian/software/pilon-1.24.jar --genome ../Col-0_XJTX.bp.p_ctg.gfa.fa --pacbio ../Col-0_XJTX.bp.p_ctg.gfa.fa.Col-0_XJTX.ccs.50X.fastq.gz.sorted.bam --output Col-0_XJTX.bp.p_ctg.gfa.fa.pilon.minimap2.fa --fix snps,indels
+
 #Racon
 racon -t 40 ../Col-0_XJTX.ccs.50X.fastq.gz ../Col-0_XJTX.bp.p_ctg.gfa.fa.Col-0_XJTX.ccs.50X.fastq.gz.paf ../Col-0_XJTX.bp.p_ctg.gfa.fa 1>Col-0_XJTX.bp.p_ctg.gfa.fa.racon.fa 2> racon.err
 ```
