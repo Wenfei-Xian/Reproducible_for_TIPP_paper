@@ -16,4 +16,5 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR866/ERR8666067/CLR_vs_HiFi_S2_L001_R2_0
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 7g 9994.q20.CCS.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz > Ey15-2.ccs.50X.fastq.gz
 ../../software/hifiasm-0.19.6/hifiasm -t 64 -o Ey15-2 Ey15-2.ccs.50X.fastq.gz 1>hifisam.out 2>hifisam.err
 grep "^S" Ey15-2.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > Ey15-2.bp.p_ctg.gfa.fa
+minimap2 -ax map-hifi -t 64 Col-0_XJTX.bp.p_ctg.gfa.fa Ey15-2.ccs.50X.fastq.gz | samtools sort -@12 -o Ey15-2.bp.p_ctg.gfa.fa.Ey15-2.ccs.50X.fastq.gz.sorted.bam -
 ```
