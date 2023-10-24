@@ -35,6 +35,7 @@ rm Mo17.ccs.fastq.gz
 ../../software/hifiasm-0.19.6/hifiasm -t 64 -o Mo17 Mo17.ccs.50X.fastq.gz 1>hifisam.out 2>hifisam.err
 grep "^S" Mo17.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > Mo17.bp.p_ctg.gfa.fa
 minimap2 -ax map-hifi -t 64 Mo17.bp.p_ctg.gfa.fa Mo17.ccs.50X.fastq.gz | samtools sort -@12 -o Mo17.bp.p_ctg.gfa.fa.Mo17.ccs.50X.fastq.gz.sorted.bam -
+minimap2 -x map-hifi -t 64 Mo17.bp.p_ctg.gfa.fa Mo17.ccs.50X.fastq.gz -o Mo17.bp.p_ctg.gfa.fa.Mo17.ccs.50X.fastq.gz.paf
 ```
 Human CHM13
 ```
@@ -50,4 +51,5 @@ cat *gz > CHM13.ccs.fastq.gz
 ../../software/hifiasm-0.19.6/hifiasm -t 88 -o CHM13 CHM13.ccs.fastq.gz 1>hifisam.out 2>hifisam.err
 grep "^S" CHM13.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > CHM13.bp.p_ctg.gfa.fa
 minimap2 -t 64 -ax map-hifi CHM13.bp.p_ctg.gfa.fa CHM13.ccs.fastq.gz | samtools sort -@12 -o CHM13.bp.p_ctg.gfa.fa.CHM13.ccs.fastq.gz.sorted.bam -
+minimap2 -t 64 -x map-hifi CHM13.bp.p_ctg.gfa.fa CHM13.ccs.fastq.gz -o CHM13.bp.p_ctg.gfa.fa.CHM13.ccs.fastq.gz.paf
 ```
