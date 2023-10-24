@@ -34,3 +34,18 @@ rm Mo17.ccs.fastq.gz
 grep "^S" Mo17.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > Mo17.bp.p_ctg.gfa.fa
 minimap2 -ax map-hifi -t 64 Mo17.bp.p_ctg.gfa.fa Mo17.ccs.50X.fastq.gz | samtools sort -@12 -o Mo17.bp.p_ctg.gfa.fa.Mo17.ccs.50X.fastq.gz.sorted.bam -
 ```
+Human CHM13
+```
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR112/020/SRR11292120/SRR11292120_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR112/021/SRR11292121/SRR11292121_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR112/022/SRR11292122/SRR11292122_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR112/023/SRR11292123/SRR11292123_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR908/007/SRR9087597/SRR9087597_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR908/008/SRR9087598/SRR9087598_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR908/009/SRR9087599/SRR9087599_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR908/000/SRR9087600/SRR9087600_subreads.fastq.gz
+cat *gz > CHM13.ccs.fastq.gz
+../../software/hifiasm-0.19.6/hifiasm -t 88 -o CHM13 CHM13.ccs.fastq.gz 1>hifisam.out 2>hifisam.err
+grep "^S" CHM13.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > CHM13.bp.p_ctg.gfa.fa
+minimap2 -t 64 -ax map-hifi CHM13.bp.p_ctg.gfa.fa CHM13.ccs.fastq.gz | samtools sort -@12 -o CHM13.bp.p_ctg.gfa.fa.CHM13.ccs.fastq.gz.sorted.bam -
+```
