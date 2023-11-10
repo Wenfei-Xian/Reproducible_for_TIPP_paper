@@ -133,3 +133,8 @@ grep "^S" TA299.bp.p_ctg.gfa |awk '{print ">"$2"\n"$3}' > TA299.bp.p_ctg.gfa.fa
 minimap2 -ax map-hifi -I 6G -t 64 TA299.bp.p_ctg.gfa.fa TA299.ccs.fastq.gz | samtools sort -@12 -o TA299.bp.p_ctg.gfa.fa.TA299.ccs.gz.sorted.bam -
 minimap2 -x map-hifi -t 64 TA299.bp.p_ctg.gfa.fa TA299.ccs.fastq.gz -o TA299.bp.p_ctg.gfa.fa.TA299.ccs.gz.paf
 ```
+
+Phylogenetic tree in newick format
+```
+(Galdieria_sulphuraria,((Chlamydomonas_reinhardtii,Haematococcus_lacustris),(Pohlia_nutans,(Isoetes_sinensis.ccs*,(Torreya_grandis,(Cinnamomum_camphora,((Acorus_gramineus,(Musa_acuminata**,(Kobresia_myosuroides,((Panicum_miliaceum,Zea_mays),(Triticum_monococcum,Oryza_sativa)))))Liliopsida,((Haloxylon_ammodendron,((Rhododendron_vialii,Actinidia_chinensis),((Helichrysum_umbraculigerum*,Daucus_carota),((Sesamum_indicum,(Perilla_frutescens,(Thymus_quinquecostatus,Salvia_hispanica*))),(Ipomoea_cairica,(Capsicum_pubescens,(Solanum_tuberosum*,(Solanum_rostratum,Solanum_lycopersicum)))))))),(Vitis_vinifera,((Rhodomyrtus_tomentosa,((Arabidopsis_thaliana,Capparis_spinosa),(Citrus_australis,Xanthoceras_sorbifolia*))),((Linum_usitatissimum,(Euphorbia_peplus,Manihot_esculenta)),((Glycine_max,(Trifolium_repens,Glycyrrhiza_uralensis)),(Fragaria_vesca,((Herpetospermum_pedunculosum,Coriaria_nepalensis),(Juglans_mandshurica,Carya_illinoinensis)))))))))))))));
+```
