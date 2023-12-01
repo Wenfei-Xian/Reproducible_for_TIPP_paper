@@ -32,4 +32,52 @@ Perilla_frutescens: kingfisher get -r DRR361636 -m ena-ascp aws-http prefetch
 Persea_americana: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR135/047/SRR13510947/SRR13510947_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR135/046/SRR13510946/SRR13510946_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR135/045/SRR13510945/SRR13510945_subreads.fastq.gz
 Pohlia_nutans: wget https://download.cncb.ac.cn/gsa/CRA006048/CRR383826/CRR383826.bam
 Rhodomyrtus_tomentosa: kingfisher get -r SRR24786875 -m ena-ascp aws-http prefetch
+Salvia_hispanica: kingfisher get -r SRR20761289 -m ena-ascp aws-http prefetch
+Sesamum_indicum: kingfisher get -r SRR21601246 -m ena-ascp aws-http prefetch
+Solanum_lycopersicum: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR152/007/SRR15243707/SRR15243707_subreads.fastq.gz
+Solanum_rostratum: kingfisher get -r SRR23354533 -m ena-ascp aws-http prefetch
+Solanum_tuberosum: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/095/SRR15458995/SRR15458995_subreads.fastq.gz
+Tetraena_mongolica: kingfisher get -r SRR20999423 -m ena-ascp aws-http prefetch
+Thymus_quinquecostatus: kingfisher get -r SRR17509707 -m ena-ascp aws-http prefetch
+Torreya_grandis:
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547745/CNR0640462/m64065_200411_084457.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547746/CNR0640463/m64112_200330_051541.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547747/CNR0640464/m64112_200407_021218.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547748/CNR0640465/m64112_200408_082621.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547749/CNR0640466/m64112_200424_195029.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547750/CNR0640467/m64112_200426_021728.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547751/CNR0640468/m64112_200427_084422.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547752/CNR0640469/m64112_200501_110146.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547753/CNR0640470/m64112_200513_100654.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547754/CNR0640471/m64112_200520_062032.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547755/CNR0640472/m64112_200521_124630.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547756/CNR0640473/m64112_200524_170408.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547757/CNR0640474/m64112_200529_073317.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547758/CNR0640475/m64112_200615_094213.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547759/CNR0640476/m64112_200623_224433.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547760/CNR0640477/m64112_200625_051044.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547761/CNR0640478/m64112_200626_113647.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547762/CNR0640479/m64112_200629_013453.subreads.bam
+wget https://ftp.cngb.org/pub/CNSA/data5/CNP0003453/CNS0606711/CNX0547763/CNR0640480/m64112_200630_074806.subreads.bam
+Trapa_bicornis: kingfisher get -r SRR22185067 -m ena-ascp aws-http prefetch
+Trifolium_repens: kingfisher get -r SRR24821882 -m ena-ascp aws-http prefetch; kingfisher get -r SRR24821883 -m ena-ascp aws-http prefetch
+Triticum_monococcum:
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/014/ERR11203114/ERR11203114.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/013/ERR11203113/ERR11203113.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/012/ERR11203112/ERR11203112.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/011/ERR11203111/ERR11203111.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/010/ERR11203110/ERR11203110.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/009/ERR11203109/ERR11203109.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/008/ERR11203108/ERR11203108.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR112/007/ERR11203107/ERR11203107.fastq.gz
+Vitis_vinifera: kingfisher get -r SRR20810426 -m ena-ascp aws-http prefetch
+Xanthoceras_sorbifolia: kingfisher get -r SRR23095608 -m ena-ascp aws-http prefetch
+Zea_mays:
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/014/SRR15447414/SRR15447414_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/015/SRR15447415/SRR15447415_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/016/SRR15447416/SRR15447416_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/018/SRR15447418/SRR15447418_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/019/SRR15447419/SRR15447419_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/020/SRR15447420/SRR15447420_subreads.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/021/SRR15447421/SRR15447421_subreads.fastq.gz
 ```
