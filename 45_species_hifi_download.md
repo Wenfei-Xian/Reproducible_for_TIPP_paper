@@ -81,3 +81,55 @@ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/019/SRR15447419/SRR15447419_subre
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/020/SRR15447420/SRR15447420_subreads.fastq.gz
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/021/SRR15447421/SRR15447421_subreads.fastq.gz
 ```
+
+Script:
+```
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Actinidia_chinensis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Adenosma_buchneroides.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Arabidopsis_thaliana.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Capparis_spinosa.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Capsicum_pubescens.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Carya_illinoinensis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Chlamydomonas_reinhardtii.ccs.fastq.gz -t 40 -p 0
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Citrus_australis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Coriaria_nepalensis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Daucus_carota.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Euphorbia_peplus.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Fragaria_vesca.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Galdieria_sulphuraria.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Glycine_max.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Glycyrrhiza_uralensis.ccs.fastq.gz -t 40
+#old
+#perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Haematococcus_lacustris.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Haematococcus_lacustris.ccs.fastq.gz -t 84 -c 100000 -n 6000 -p 0
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Haloxylon_ammodendron.ccs.fastq.gz -t 40 -p 0
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Helichrysum_umbraculigerum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Herpetospermum_pedunculosum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Ipomoea_cairica.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Isoetes_sinensis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Juglans_mandshurica.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Kobresia_myosuroides.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Linum_usitatissimum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Manihot_esculenta.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Musa_acuminata.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Ochroma_pyramidale.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Oryza_sativa.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Panicum_miliaceum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Perilla_frutescens.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Persea_americana.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Pohlia_nutans.ccs.fasta.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Rhodomyrtus_tomentosa.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Sesamum_indicum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Solanum_lycopersicum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Solanum_rostratum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Solanum_tuberosum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Thymus_quinquecostatus.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Torreya_grandis.ccs.fasta.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Trapa_bicornis.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Trifolium_repens.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Triticum_monococcum.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Vitis_vinifera.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Xanthoceras_sorbifolia.ccs.fastq.gz -t 40
+perl /tmp/global2/wxian/te/TIPP/src/TIPP_plastid.pl -d /tmp/global2/wxian/software/TIPP/Plant_chlo_mito.fa.gz -f Zea_mays.ccs.fastq.gz -t 40
+
+```
