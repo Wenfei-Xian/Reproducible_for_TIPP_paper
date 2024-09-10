@@ -55,3 +55,56 @@ Xanthoceras_sorbifolia: kingfisher get -r SRR23095608 -m ena-ascp aws-http prefe
 Zea_mays: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/014/SRR15447414/SRR15447414_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/015/SRR15447415/SRR15447415_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/016/SRR15447416/SRR15447416_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/018/SRR15447418/SRR15447418_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/019/SRR15447419/SRR15447419_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/020/SRR15447420/SRR15447420_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/021/SRR15447421/SRR15447421_subreads.fastq.gz
 Zygnema_circumcarinatum: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR244/096/SRR24451196/SRR24451196_subreads.fastq.gz
 ```
+## Step2. Subsample the data
+
+### species4X.txt
+
+```
+Actinidia_chinensis=2464M
+Capparis_spinosa=1098M
+Carya_illinoinensis=2696M
+Citrus_australis=1324M
+Arabidopsis_thaliana=532M
+Coriaria_nepalensis=1252M
+Chlamydomonas_reinhardtii=480M
+Daucus_carota=1720M
+Euphorbia_peplus=1068M
+Fragaria_vesca=880M
+Glycyrrhiza_uralensis=1716M
+Vitis_vinifera=4024M
+Capsicum_pubescens=15708M
+Galdieria_sulphuraria=72M
+Haematococcus_pluvialis=1264M
+Haloxylon_ammodendron=2740M
+Helichrysum_umbraculigerum=5260M
+Herpetospermum_pedunculosum=3216M
+Triticum_monococcum=20000M
+Ipomoea_cairica=2932M
+Isoetes_sinensis=9000M
+Juglans_mandshurica=2112M
+Kobresia_myosuroides=1596M
+Linum_usitatissimum=1816M
+Manihot_esculenta=2920M
+Zea_mays=8712M
+Musa_acuminata=1880M
+Panicum_miliaceum=3360M
+Perilla_frutescens=4936M
+Pohlia_nutans=2792M
+Solanum_tuberosum=3060M
+Rhodomyrtus_tomentosa=1880M
+Oryza_sativa=1580M
+Sesamum_indicum=1236M
+Solanum_rostratum=3476M
+Glycine_max=4052M
+Thymus_quinquecostatus=2112M
+Solanum_lycopersicum=3204M
+Torreya_grandis=76000M
+Trifolium_repens=3992M
+Xanthoceras_sorbifolia=1956M
+Adenosma_buchneroides=1768M
+Ochroma_pyramidale=7360M
+Persea_americana=3496M
+Trapa_bicornis=1916M
+Amborella_trichopoda=4000M
+```
+
