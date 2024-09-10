@@ -100,7 +100,7 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1880M Rhodomyrtus_tomentosa.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Rhodomyrtus_tomentosa.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1400M Salvia_hispanica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Salvia_hispanica.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1236M Sesamum_indicum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Sesamum_indicum.4X.fastq.gz
-cat: fxtools.Silene_conica.sh: No such file or directory
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 8600M Silene_conica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Silene_conica.10X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3204M Solanum_lycopersicum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_lycopersicum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3476M Solanum_rostratum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_rostratum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3060M Solanum_tuberosum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_tuberosum.4X.fastq.gz
