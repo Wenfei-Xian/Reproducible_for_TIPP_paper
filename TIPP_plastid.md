@@ -55,6 +55,8 @@ Xanthoceras_sorbifolia: kingfisher get -r SRR23095608 -m ena-ascp aws-http prefe
 Zea_mays: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/014/SRR15447414/SRR15447414_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/015/SRR15447415/SRR15447415_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/016/SRR15447416/SRR15447416_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/018/SRR15447418/SRR15447418_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/019/SRR15447419/SRR15447419_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/020/SRR15447420/SRR15447420_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR154/021/SRR15447421/SRR15447421_subreads.fastq.gz
 Zygnema_circumcarinatum: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR244/096/SRR24451196/SRR24451196_subreads.fastq.gz
 ```
+Then, convert the name to the  form of : species.ccs.fastq.gz
+
 ## Step2. Subsample the data
 
 ### species4X.txt
