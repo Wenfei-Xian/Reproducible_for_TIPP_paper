@@ -108,3 +108,9 @@ Trapa_bicornis=1916M
 Amborella_trichopoda=4000M
 ```
 
+### fxTools 
+https://github.com/BGI-shenzhen/FxTools
+
+```
+for i in `cat species4X.txt`;do species=`echo $i|awk -F '=' '{print $1}'`; size=`echo $i|awk -F '=' '{print $2}'`; echo "fxTools -s $size $species.ccs.fastq.gz | pigz -p 8 > $species.4X.fastq.gz" > fxtools.$species.sh ;done
+```
