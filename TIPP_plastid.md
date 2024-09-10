@@ -114,3 +114,5 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 8712M Zea_mays.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zea_mays.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 700M Zygnema_circumcarinatum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zygnema_circumcarinatum.10X.fastq.gz
 ```
+
+## Step2: Assembly of Chloroplast genomes
