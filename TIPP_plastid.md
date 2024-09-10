@@ -304,8 +304,66 @@ for i in `ls /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW | grep "CLAW"` ;do
 	rm chloro_assembly config.yml -rf
 	ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW/$i/chloro_assembly
 	ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW/$i/config.yml
-	snakemake --profile profiles/local --use-conda --keep-going
+	time -v snakemake --profile profiles/local --use-conda --keep-going
 done
 ```
 
 ### PMAT: mitochondrial
+
+autoMito model will be used first
+```
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Actinidia_chinensis.4X.fastq.gz -o Actinidia_chinensis.PMAT -st HiFi -g 616M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Adenosma_buchneroides.4X.fastq.gz -o Adenosma_buchneroides.PMAT -st HiFi -g 442M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Amborella_trichopoda.4X.fastq.gz -o Amborella_trichopoda.PMAT -st HiFi -g 870M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Arabidopsis_lyrata.4X.fastq.gz -o Arabidopsis_lyrata.PMAT -st HiFi -g 217M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Arabidopsis_thaliana.4X.fastq.gz -o Arabidopsis_thaliana.PMAT -st HiFi -g 133M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Capparis_spinosa.4X.fastq.gz -o Capparis_spinosa.PMAT -st HiFi -g 274M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Capsicum_pubescens.4X.fastq.gz -o Capsicum_pubescens.PMAT -st HiFi -g 3927M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Carya_illinoinensis.4X.fastq.gz -o Carya_illinoinensis.PMAT -st HiFi -g 674M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Chlamydomonas_reinhardtii.4X.fastq.gz -o Chlamydomonas_reinhardtii.PMAT -st HiFi -g 120M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Cinnamomum_camphora.4X.fastq.gz -o Cinnamomum_camphora.PMAT -st HiFi -g 760M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Citrullus_lanatus.4X.fasta.gz -o Citrullus_lanatus.PMAT -st HiFi -g 425M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Citrus_australis.4X.fastq.gz -o Citrus_australis.PMAT -st HiFi -g 331M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Coriaria_nepalensis.4X.fastq.gz -o Coriaria_nepalensis.PMAT -st HiFi -g 313M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Cucumis_melo.4X.fastq.gz -o Cucumis_melo.4X.PMAT -st HiFi -g 380M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Daucus_carota.4X.fastq.gz -o Daucus_carota.PMAT -st HiFi -g 430M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Euphorbia_peplus.4X.fastq.gz -o Euphorbia_peplus.PMAT -st HiFi -g 267M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Fragaria_vesca.4X.fastq.gz -o Fragaria_vesca.PMAT -st HiFi -g 220M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Galdieria_sulphuraria.4X.fastq.gz -o Galdieria_sulphuraria.PMAT -st HiFi -g 18M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Glycine_max.4X.fastq.gz -o Glycine_max.PMAT -st HiFi -g 1013M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Glycyrrhiza_uralensis.4X.fastq.gz -o Glycyrrhiza_uralensis.PMAT -st HiFi -g 429M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Haematococcus_pluvialis.4X.fastq.gz -o Haematococcus_pluvialis.PMAT -st HiFi -g 361M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Haloxylon_ammodendron.4X.fastq.gz -o Haloxylon_ammodendron.PMAT -st HiFi -g 685M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Helichrysum_umbraculigerum.4X.fastq.gz -o Helichrysum_umbraculigerum.PMAT -st HiFi -g 1315M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Herpetospermum_pedunculosum.4X.fastq.gz -o Herpetospermum_pedunculosum.PMAT -st HiFi -g 804M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Ipomoea_cairica.4X.fastq.gz -o Ipomoea_cairica.PMAT -st HiFi -g 733M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Juglans_mandshurica.4X.fastq.gz -o Juglans_mandshurica.PMAT -st HiFi -g 528M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Kobresia_myosuroides.4X.fastq.gz -o Kobresia_myosuroides.PMAT -st HiFi -g 399M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Linum_usitatissimum.4X.fastq.gz -o Linum_usitatissimum.PMAT -st HiFi -g 454M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Lycopodium_japonicum.fastq.gz -o Lycopodium_japonicum.PMAT -st HiFi -g 4000M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Manihot_esculenta.4X.fastq.gz -o Manihot_esculenta.PMAT -st HiFi -g 730M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Musa_acuminata.4X.fastq.gz -o Musa_acuminata.PMAT -st HiFi -g 470M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Ochroma_pyramidale.4X.fastq.gz -o Ochroma_pyramidale.PMAT -st HiFi -g 1840M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Oryza_sativa.4X.fastq.gz -o Oryza_sativa.PMAT -st HiFi -g 395M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Panicum_miliaceum.4X.fastq.gz -o Panicum_miliaceum.PMAT -st HiFi -g 840M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Perilla_frutescens.4X.fastq.gz -o Perilla_frutescens.PMAT -st HiFi -g 1234M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Persea_americana.4X.fastq.gz -o Persea_americana.PMAT -st HiFi -g 874M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Pohlia_nutans.4X.fastq.gz -o Pohlia_nutans.PMAT -st HiFi -g 698M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Rhodomyrtus_tomentosa.4X.fastq.gz -o Rhodomyrtus_tomentosa.PMAT -st HiFi -g 470M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Salvia_hispanica.4X.fastq.gz -o Salvia_hispanica.PMAT -st HiFi -g 350M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Sesamum_indicum.4X.fastq.gz -o Sesamum_indicum.PMAT -st HiFi -g 309M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Silene_conica.10X.fastq.gz -o Silene_conica.PMAT -st HiFi -g 860M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Solanum_lycopersicum.4X.fastq.gz -o Solanum_lycopersicum.PMAT -st HiFi -g 801M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Solanum_rostratum.4X.fastq.gz -o Solanum_rostratum.PMAT -st HiFi -g 869M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Solanum_tuberosum.4X.fastq.gz -o Solanum_tuberosum.PMAT -st HiFi -g 765M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Taxus_chinensis.2X.fastq.gz -o Taxus_chinensis.PMAT -st HiFi -g 10230M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Thymus_quinquecostatus.4X.fastq.gz -o Thymus_quinquecostatus.PMAT -st HiFi -g 528M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Trapa_bicornis.4X.fastq.gz -o Trapa_bicornis.PMAT -st HiFi -g 479M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Trifolium_repens.4X.fastq.gz -o Trifolium_repens.PMAT -st HiFi -g 998M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Triticum_monococcum.4X.fastq.gz -o Triticum_monococcum.PMAT -st HiFi -g 5000M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Vitis_vinifera.4X.fastq.gz -o Vitis_vinifera.PMAT -st HiFi -g 1006M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Xanthoceras_sorbifolia.4X.fastq.gz -o Xanthoceras_sorbifolia.PMAT -st HiFi -g 489M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zea_mays.4X.fastq.gz -o Zea_mays.PMAT -st HiFi -g 2178M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zygnema_circumcarinatum.10X.fastq.gz -o Zygnema_circumcarinatum.PMAT -st HiFi -g 71M -tp mt -cpu 40
+```
+
