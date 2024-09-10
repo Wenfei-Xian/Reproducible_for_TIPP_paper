@@ -4,7 +4,7 @@ Acorus_gramineus: wget https://ftp.cngb.org/pub/CNSA/data5/CNP0002281/CNS0462037
 Actinidia_chinensis: kingfisher get -r SRR21031553 -m ena-ascp aws-http prefetch
 Amborella_trichopoda: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR288/027/SRR28888927/SRR28888927_subreads.fastq.gz; wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR288/028/SRR28888928/SRR28888928_subreads.fastq.gz
 Adenosma_buchneroides: wget https://download.cncb.ac.cn/gsa2/CRA011236/CRR793707/CRR793707.bam
-Arabidopsis_thaliana: wget https://download.cncb.ac.cn/gsa/CRA004538/CRR302668/CRR302668.fastq.gz
+Arabidopsis_thaliana: wget ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR866/ERR8666125/9994.q20.CCS.fastq.gz
 Arabidopsis_lyrata: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR992/003/ERR9920863/ERR9920863.fastq.gz
 Capparis_spinosa: kingfisher get -r SRR17373648 -m ena-ascp aws-http prefetch
 Capsicum_pubescens: kingfisher get -r SRR23352910 -m ena-ascp aws-http prefetch
