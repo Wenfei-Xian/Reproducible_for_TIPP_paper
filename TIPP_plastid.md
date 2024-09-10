@@ -173,3 +173,61 @@ perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Xanthoceras_sorbifolia.
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zea_mays.4X.fastq.gz -t 40
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zygnema_circumcarinatum.10X.fastq.gz -t 40
 ```
+
+ptGAUL
+```
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_045294.1.fasta -l ../Acorus_gramineus.4X.fastq.gz -o Acorus_gramineus.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR538546.1.fasta -l ../Actinidia_chinensis.4X.fastq.gz -o Actinidia_chinensis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_072589.1.fasta -l ../Adenosma_buchneroides.4X.fastq.gz -o Adenosma_buchneroides.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_005086.1.fasta -l ../Amborella_trichopoda.4X.fastq.gz -o Amborella_trichopoda.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_034379.1.fasta -l ../Arabidopsis_lyrata.4X.fastq.gz -o Arabidopsis_lyrata.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_034379.1.fasta -l ../Arabidopsis_thaliana.4X.fastq.gz -o Arabidopsis_thaliana.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_053386.1.fasta -l ../Capparis_spinosa.4X.fastq.gz -o Capparis_spinosa.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR575431.1.fasta -l ../Capsicum_pubescens.4X.fastq.gz -o Capsicum_pubescens.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OL435712.1.fasta -l ../Carya_illinoinensis.4X.fastq.gz -o Carya_illinoinensis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_068623.1.fasta -l ../Chlamydomonas_reinhardtii.4X.fastq.gz -o Chlamydomonas_reinhardtii.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR654104.1.fasta -l ../Cinnamomum_camphora.4X.fastq.gz -o Cinnamomum_camphora.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_058582.1.fasta -l ../Citrullus_lanatus.4X.fasta.gz -o Citrullus_lanatus.4X.fasta.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_077664.1.fasta -l ../Citrus_australis.4X.fastq.gz -o Citrus_australis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_059766.1.fasta -l ../Coriaria_nepalensis.4X.fastq.gz -o Coriaria_nepalensis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_057560.1.fasta -l ../Cucumis_melo.4X.fastq.gz -o Cucumis_melo.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_CP093353.1.fasta -l ../Daucus_carota.4X.fastq.gz -o Daucus_carota.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_083120.1.fasta -l ../Euphorbia_peplus.4X.fastq.gz -o Euphorbia_peplus.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OQ992645.1.fasta -l ../Fragaria_vesca.4X.fastq.gz -o Fragaria_vesca.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OP616816.1.fasta -l ../Galdieria_sulphuraria.4X.fastq.gz -o Galdieria_sulphuraria.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR664111.1.fasta -l ../Glycine_max.4X.fastq.gz -o Glycine_max.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_077552.1.fasta -l ../Glycyrrhiza_uralensis.4X.fastq.gz -o Glycyrrhiza_uralensis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_037007.1.fasta -l ../Haematococcus_pluvialis.4X.fastq.gz -o Haematococcus_pluvialis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR251181.1.fasta -l ../Haloxylon_ammodendron.4X.fastq.gz -o Haloxylon_ammodendron.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_ON641360.1.fasta -l ../Helichrysum_umbraculigerum.4X.fastq.gz -o Helichrysum_umbraculigerum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR567247.1.fasta -l ../Herpetospermum_pedunculosum.4X.fastq.gz -o Herpetospermum_pedunculosum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_068906.1.fasta -l ../Ipomoea_cairica.4X.fastq.gz -o Ipomoea_cairica.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR134831.1.fasta -l ../Juglans_mandshurica.4X.fastq.gz -o Juglans_mandshurica.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_053278.1.fasta -l ../Kobresia_myosuroides.4X.fastq.gz -o Kobresia_myosuroides.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_067592.1.fasta -l ../Linum_usitatissimum.4X.fastq.gz -o Linum_usitatissimum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_040994.1.fasta -l ../Lycopodium_japonicum.fastq.gz -o Lycopodium_japonicum.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_010433.1.fasta -l ../Manihot_esculenta.4X.fastq.gz -o Manihot_esculenta.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR582422.1.fasta -l ../Musa_acuminata.4X.fastq.gz -o Musa_acuminata.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR567246.1.fasta -l ../Ochroma_pyramidale.4X.fastq.gz -o Ochroma_pyramidale.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_053278.1.fasta -l ../Oryza_sativa.4X.fastq.gz -o Oryza_sativa.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OQ873414.1.fasta -l ../Panicum_miliaceum.4X.fastq.gz -o Panicum_miliaceum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR567250.1.fasta -l ../Perilla_frutescens.4X.fastq.gz -o Perilla_frutescens.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_058714.1.fasta -l ../Persea_americana.4X.fastq.gz -o Persea_americana.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_056136.1.fasta -l ../Pohlia_nutans.4X.fasta.gz -o Pohlia_nutans.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_043848.1.fasta -l ../Rhodomyrtus_tomentosa.4X.fastq.gz -o Rhodomyrtus_tomentosa.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR652279.1.fasta -l ../Salvia_hispanica.4X.fastq.gz -o Salvia_hispanica.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_016433.2.fasta -l ../Sesamum_indicum.4X.fastq.gz -o Sesamum_indicum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_077503.1.fasta -l ../Silene_conica.10X.fastq.gz -o Silene_conica.10X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR632702.1.fasta -l ../Solanum_lycopersicum.4X.fastq.gz -o Solanum_lycopersicum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR632702.1.fasta -l ../Solanum_rostratum.4X.fastq.gz -o Solanum_rostratum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR632702.1.fasta -l ../Solanum_tuberosum.4X.fastq.gz -o Solanum_tuberosum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_073116.1.fasta -l ../Taxus_chinensis.2X.fastq.gz -o Taxus_chinensis.2X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR567249.1.fasta -l ../Thymus_quinquecostatus.4X.fastq.gz -o Thymus_quinquecostatus.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_064354.1.fasta -l ../Trapa_bicornis.4X.fastq.gz -o Trapa_bicornis.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_082432.1.fasta -l ../Trifolium_repens.4X.fastq.gz -o Trifolium_repens.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_046698.1.fasta -l ../Triticum_monococcum.4X.fastq.gz -o Triticum_monococcum.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR500062.1.fasta -l ../Vitis_vinifera.4X.fastq.gz -o Vitis_vinifera.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_037448.1.fasta -l ../Xanthoceras_sorbifolia.4X.fastq.gz -o Xanthoceras_sorbifolia.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_030377.1.fasta -l ../Zea_mays.4X.fastq.gz -o Zea_mays.4X.fastq.gz.ptgaul
+/tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_008117.1.fasta -l ../Zygnema_circumcarinatum.4X.fastq.gz -o Zygnema_circumcarinatum.4X.fastq.gz.ptgaul
+```
