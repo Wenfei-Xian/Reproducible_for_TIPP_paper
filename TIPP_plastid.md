@@ -114,9 +114,9 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 300M Zygnema_circumcarinatum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zygnema_circumcarinatum.4X.fastq.gz
 ```
 
-## Step3: Assembly the Chloroplast genome
+## Step3: Assembly the Chloroplast and mitochondrial genomes
 
-TIPP_plastid: Chloroplast + Mitochondrial
+### TIPP_plastid: Chloroplast + Mitochondrial
 ```
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Acorus_gramineus.4X.fastq.gz -t 40
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Actinidia_chinensis.4X.fastq.gz -t 40
@@ -174,7 +174,7 @@ perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zea_mays.4X.fastq.gz -t
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zygnema_circumcarinatum.10X.fastq.gz -t 40
 ```
 
-ptGAUL
+### ptGAUL: Chloroplast
 ```
 /tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_045294.1.fasta -l ../Acorus_gramineus.4X.fastq.gz -o Acorus_gramineus.4X.fastq.gz.ptgaul
 /tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_OR538546.1.fasta -l ../Actinidia_chinensis.4X.fastq.gz -o Actinidia_chinensis.4X.fastq.gz.ptgaul
@@ -232,7 +232,7 @@ ptGAUL
 /tmp/global2/wxian/software/anaconda3/envs/ptgaul/bin/ptGAUL.sh -r Chloroplast_NC_008117.1.fasta -l ../Zygnema_circumcarinatum.4X.fastq.gz -o Zygnema_circumcarinatum.4X.fastq.gz.ptgaul
 ```
 
-CLAW
+### CLAW: Chloroplast
 
 first, git clone the CLAW 
 ```
@@ -308,3 +308,4 @@ for i in `ls /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW | grep "CLAW"` ;do
 done
 ```
 
+### PMAT: mitochondrial
