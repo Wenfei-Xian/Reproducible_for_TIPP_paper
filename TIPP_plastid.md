@@ -58,7 +58,6 @@ Zygnema_circumcarinatum: wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR244/096/SRR2
 Then, convert the name to the  form of : species.ccs.fastq.gz
 
 ## Step2. Subsample the data
-
 ```
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Acorus_gramineus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Acorus_gramineus.10X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2464M Actinidia_chinensis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Actinidia_chinensis.4X.fastq.gz
@@ -71,10 +70,10 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2696M Carya_illinoinensis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Carya_illinoinensis.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 480M Chlamydomonas_reinhardtii.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Chlamydomonas_reinhardtii.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3100M Cinnamomum_camphora.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Cinnamomum_camphora.4X.fastq.gz
-cat: fxtools.Citrullus_lanatus.sh: No such file or directory
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1800M Citrullus_lanatus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Citrullus_lanatus.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1324M Citrus_australis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Citrus_australis.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1252M Coriaria_nepalensis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Coriaria_nepalensis.4X.fastq.gz
-cat: fxtools.Cucumis_melo.sh: No such file or directory
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1600M Cucumis_melo.ccs.fastq | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Cucumis_melo.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1720M Daucus_carota.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Daucus_carota.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1068M Euphorbia_peplus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Euphorbia_peplus.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 880M Fragaria_vesca.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Fragaria_vesca.4X.fastq.gz
@@ -89,7 +88,7 @@ cat: fxtools.Cucumis_melo.sh: No such file or directory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4224M Juglans_mandshurica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Juglans_mandshurica.8X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Kobresia_myosuroides.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Kobresia_myosuroides.10X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1816M Linum_usitatissimum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Linum_usitatissimum.4X.fastq.gz
-cat: fxtools.Lycopodium_japonicum.sh: No such file or directory
+#Lycopodium_japonicum not necessory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2920M Manihot_esculenta.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Manihot_esculenta.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 7520M Musa_acuminata.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Musa_acuminata.16X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 7360M Ochroma_pyramidale.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Ochroma_pyramidale.4X.fastq.gz
@@ -97,7 +96,7 @@ cat: fxtools.Lycopodium_japonicum.sh: No such file or directory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3360M Panicum_miliaceum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Panicum_miliaceum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4936M Perilla_frutescens.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Perilla_frutescens.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3496M Persea_americana.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Persea_americana.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2792M Pohlia_nutans.ccs.fasta.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Pohlia_nutans.4X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2792M Pohlia_nutans.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Pohlia_nutans.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1880M Rhodomyrtus_tomentosa.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Rhodomyrtus_tomentosa.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1400M Salvia_hispanica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Salvia_hispanica.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1236M Sesamum_indicum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Sesamum_indicum.4X.fastq.gz
@@ -105,7 +104,7 @@ cat: fxtools.Silene_conica.sh: No such file or directory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3204M Solanum_lycopersicum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_lycopersicum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3476M Solanum_rostratum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_rostratum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3060M Solanum_tuberosum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_tuberosum.4X.fastq.gz
-cat: fxtools.Taxus_chinensis.sh: No such file or directory
+#Taxus_chinensis not necessory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2112M Thymus_quinquecostatus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Thymus_quinquecostatus.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3832M Trapa_bicornis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Trapa_bicornis.8X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3992M Trifolium_repens.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Trifolium_repens.4X.fastq.gz
