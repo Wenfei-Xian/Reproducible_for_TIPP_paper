@@ -59,11 +59,10 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 
 ## Step2. Subsample the data
 ```
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Acorus_gramineus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Acorus_gramineus.10X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2464M Actinidia_chinensis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Actinidia_chinensis.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1768M Adenosma_buchneroides.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Adenosma_buchneroides.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Amborella_trichopoda.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Amborella_trichopoda.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 900M Arabidopsis_lyrata.ccs.fastq.gz | pigz -p 48 > Arabidopsis_lyrata.4X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 900M Arabidopsis_lyrata.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 48 > Arabidopsis_lyrata.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 532M Arabidopsis_thaliana.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Arabidopsis_thaliana.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1098M Capparis_spinosa.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Capparis_spinosa.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 15708M Capsicum_pubescens.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Capsicum_pubescens.4X.fastq.gz
@@ -85,12 +84,12 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 5260M Helichrysum_umbraculigerum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Helichrysum_umbraculigerum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3216M Herpetospermum_pedunculosum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Herpetospermum_pedunculosum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2932M Ipomoea_cairica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Ipomoea_cairica.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4224M Juglans_mandshurica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Juglans_mandshurica.8X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Kobresia_myosuroides.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Kobresia_myosuroides.10X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2112M Juglans_mandshurica.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Juglans_mandshurica.4X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1600M Kobresia_myosuroides.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Kobresia_myosuroides.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1816M Linum_usitatissimum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Linum_usitatissimum.4X.fastq.gz
 #Lycopodium_japonicum not necessory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2920M Manihot_esculenta.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Manihot_esculenta.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 7520M Musa_acuminata.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Musa_acuminata.16X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1880M Musa_acuminata.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Musa_acuminata.16X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 7360M Ochroma_pyramidale.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Ochroma_pyramidale.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1580M Oryza_sativa.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Oryza_sativa.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3360M Panicum_miliaceum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Panicum_miliaceum.4X.fastq.gz
@@ -106,17 +105,18 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3060M Solanum_tuberosum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Solanum_tuberosum.4X.fastq.gz
 #Taxus_chinensis not necessory
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2112M Thymus_quinquecostatus.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Thymus_quinquecostatus.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3832M Trapa_bicornis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Trapa_bicornis.8X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 1916M Trapa_bicornis.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Trapa_bicornis.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 3992M Trifolium_repens.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Trifolium_repens.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 20000M Triticum_monococcum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Triticum_monococcum.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4024M Vitis_vinifera.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Vitis_vinifera.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 4000M Xanthoceras_sorbifolia.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Xanthoceras_sorbifolia.8X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 2000M Xanthoceras_sorbifolia.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Xanthoceras_sorbifolia.4X.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 8712M Zea_mays.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zea_mays.4X.fastq.gz
-/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 700M Zygnema_circumcarinatum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zygnema_circumcarinatum.10X.fastq.gz
+/tmp/global2/wxian/software/fxTools/target/release/fxTools -s 300M Zygnema_circumcarinatum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zygnema_circumcarinatum.4X.fastq.gz
 ```
 
 ## Step3: Assembly the Chloroplast genome
 
+TIPP_plastid: Chloroplast + Mitochondrial
 ```
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Acorus_gramineus.4X.fastq.gz -t 40
 perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Actinidia_chinensis.4X.fastq.gz -t 40
