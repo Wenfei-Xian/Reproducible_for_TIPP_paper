@@ -115,4 +115,61 @@ Then, convert the name to the  form of : species.ccs.fastq.gz
 /tmp/global2/wxian/software/fxTools/target/release/fxTools -s 700M Zygnema_circumcarinatum.ccs.fastq.gz | /tmp/global2/wxian/software/pigz-master/pigz -p 8 > Zygnema_circumcarinatum.10X.fastq.gz
 ```
 
-## Step2: Assembly of Chloroplast genomes
+## Step3: Assembly the Chloroplast genome
+
+```
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Acorus_gramineus.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Actinidia_chinensis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Adenosma_buchneroides.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Amborella_trichopoda.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Arabidopsis_lyrata.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Arabidopsis_thaliana.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Capparis_spinosa.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Capsicum_pubescens.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Carya_illinoinensis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Chlamydomonas_reinhardtii.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Cinnamomum_camphora.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Citrullus_lanatus.4X.fasta.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Citrus_australis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Coriaria_nepalensis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Cucumis_melo.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Daucus_carota.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Euphorbia_peplus.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Fragaria_vesca.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Galdieria_sulphuraria.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Glycine_max.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Glycyrrhiza_uralensis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Haematococcus_pluvialis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Haloxylon_ammodendron.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Helichrysum_umbraculigerum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Herpetospermum_pedunculosum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Ipomoea_cairica.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Juglans_mandshurica.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Kobresia_myosuroides.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Linum_usitatissimum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Lycopodium_japonicum.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Manihot_esculenta.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Musa_acuminata.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Ochroma_pyramidale.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Oryza_sativa.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Panicum_miliaceum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Perilla_frutescens.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Persea_americana.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Pohlia_nutans.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Rhodomyrtus_tomentosa.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Salvia_hispanica.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Sesamum_indicum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Silene_conica.10X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Solanum_lycopersicum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Solanum_rostratum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Solanum_tuberosum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Taxus_chinensis.2X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Thymus_quinquecostatus.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Trapa_bicornis.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Trifolium_repens.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Triticum_monococcum.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Vitis_vinifera.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Xanthoceras_sorbifolia.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zea_mays.4X.fastq.gz -t 40
+perl /tmp/global2/wxian/TIPP/src/TIPP_plastid.v2.1.pl -f Zygnema_circumcarinatum.10X.fastq.gz -t 40
+```
