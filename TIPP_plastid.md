@@ -296,3 +296,15 @@ mkdir Xanthoceras_sorbifolia.4X.fastq.gz.CLAW; mkdir Xanthoceras_sorbifolia.4X.f
 mkdir Zea_mays.4X.fastq.gz.CLAW; mkdir Zea_mays.4X.fastq.gz.CLAW/chloro_assembly; mkdir Zea_mays.4X.fastq.gz.CLAW/chloro_assembly/reads; mkdir Zea_mays.4X.fastq.gz.CLAW/chloro_assembly/reference; cp /tmp/global2/wxian/software/CLAW3/config.yml Zea_mays.4X.fastq.gz.CLAW; cd Zea_mays.4X.fastq.gz.CLAW/chloro_assembly/reads; ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/Zea_mays.4X.fastq.gz ./ ; cd ../../../; genus=`echo Zea_mays.4X.fastq.gz|awk -F '_' '{print $1}'`; ID=`grep "" all.ID | awk '{print $1}' | sed "s/Chloroplast_//"`; sed -i "s/NC_008155.1/$ID/" Zea_mays.4X.fastq.gz.CLAW/config.yml
 mkdir Zygnema_circumcarinatum.4X.fastq.gz.CLAW; mkdir Zygnema_circumcarinatum.4X.fastq.gz.CLAW/chloro_assembly; mkdir Zygnema_circumcarinatum.4X.fastq.gz.CLAW/chloro_assembly/reads; mkdir Zygnema_circumcarinatum.4X.fastq.gz.CLAW/chloro_assembly/reference; cp /tmp/global2/wxian/software/CLAW3/config.yml Zygnema_circumcarinatum.4X.fastq.gz.CLAW; cd Zygnema_circumcarinatum.4X.fastq.gz.CLAW/chloro_assembly/reads; ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/Zygnema_circumcarinatum.4X.fastq.gz ./ ; cd ../../../; genus=`echo Zygnema_circumcarinatum.4X.fastq.gz|awk -F '_' '{print $1}'`; ID=`grep "" all.ID | awk '{print $1}' | sed "s/Chloroplast_//"`; sed -i "s/NC_008155.1/$ID/" Zygnema_circumcarinatum.4X.fastq.gz.CLAW/config.yml
 ```
+Third, run CLAW
+
+```
+cd CLAW;
+for i in `ls /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW | grep "CLAW"` ;do
+	rm chloro_assembly config.yml -rf
+	ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW/$i/chloro_assembly
+	ln -s /ebio/scratch/wxian/TIPP_plastid_v2.1/zCLAW/$i/config.yml
+	snakemake --profile profiles/local --use-conda --keep-going
+done
+```
+
