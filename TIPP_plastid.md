@@ -364,6 +364,6 @@ autoMito model will be used first
 /tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Vitis_vinifera.4X.fastq.gz -o Vitis_vinifera.PMAT -st HiFi -g 1006M -tp mt -cpu 40
 /tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Xanthoceras_sorbifolia.4X.fastq.gz -o Xanthoceras_sorbifolia.PMAT -st HiFi -g 489M -tp mt -cpu 40
 /tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zea_mays.4X.fastq.gz -o Zea_mays.PMAT -st HiFi -g 2178M -tp mt -cpu 40
-/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zygnema_circumcarinatum.10X.fastq.gz -o Zygnema_circumcarinatum.PMAT -st HiFi -g 71M -tp mt -cpu 40
+/tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zygnema_circumcarinatum.4X.fastq.gz -o Zygnema_circumcarinatum.PMAT -st HiFi -g 71M -tp mt -cpu 40
 ```
 
