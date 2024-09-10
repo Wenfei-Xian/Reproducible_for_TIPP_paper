@@ -366,4 +366,10 @@ autoMito model will be used first
 /tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zea_mays.4X.fastq.gz -o Zea_mays.PMAT -st HiFi -g 2178M -tp mt -cpu 40
 /tmp/global2/wxian/software/PMAT/bin/PMAT autoMito -i Zygnema_circumcarinatum.4X.fastq.gz -o Zygnema_circumcarinatum.PMAT -st HiFi -g 71M -tp mt -cpu 40
 ```
+graphBuild model leter
 
+```
+XXXX
+XXXX
+XXX
+```
